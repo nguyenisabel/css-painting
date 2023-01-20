@@ -35,52 +35,105 @@ nav a{
 
 /* Boxes */
 .box1 {
-    left: 100px;  
-    top: 100px;
-
-    width: 0;
-    height: 0;
+    position: relative;
+    /* width: 0;
+    height: 0; */
     border-top: 125px solid transparent;
     border-right: 125px solid black;
     border-bottom: 125px solid transparent;
+    animation: move1 5s infinite;
+}
+@keyframes move1 {
+  from {left: 0rem;}
+  to {left: 22.25rem;}
 }
 
 .box2 {
-    width: 0;
-    height: 0;
+    position: relative;
     border-top: 75px solid transparent;
     border-right: 75px solid rgb(165, 164, 164);
     border-bottom: 75px solid transparent;
     transform: rotate(-90deg);
     align-self: center;
+    animation: move2 5s infinite;
+}
+@keyframes move2 {
+  from {left: 0rem;}
+  to {left: 5rem;}
 }
 
 .box3 {
+    position: relative;
     right: 100px;
     top: 100px;
     border-top: 125px solid transparent;
     border-right: 125px solid rgb(231, 59, 59);
     border-bottom: 125px solid transparent;
     align-self: center;
-    margin-top: 13rem;
+    animation: move3 5s infinite;
+}
+@keyframes move3 {
+  from {
+    border-top: 125px solid transparent;
+    border-right: 125px solid rgb(231, 59, 59);
+    border-bottom: 125px solid transparent;
+    right: 0;
+    }
+  to {
+    border-top: 180px solid transparent;
+    border-right: 180px solid rgb(231, 59, 59);
+    border-bottom: 180px solid transparent;
+    right: 22rem;
+    }
 }
 
 .box4 {
+    position: relative;
     width: 75px;
     height: 75px;
     background-color: rgb(217, 175, 91);
     transform: rotate(-45deg);
+    animation: move4 5s infinite;
+}
+@keyframes move4 {
+    from {
+        bottom: 0;
+        left: 0rem;
+    }
+    to {
+        bottom: 25px;
+        left: 19.25rem;
+    }
 }
 
 .box5 {
+    position: relative;
     border-top: 100px solid transparent;
     border-right: 100px solid rgb(46, 115, 208);
     grid-column: 3;
     justify-self: start;  
     margin-top: 2rem;
+    animation: move5 5s infinite;
+}
+@keyframes move5 {
+    from {
+        transform: none;
+        bottom: 0;
+        right: 0;
+        border-top: 100px solid transparent;
+        border-right: 100px solid rgb(46, 115, 208);
+    }
+    to {
+        transform: rotate(90deg);
+        bottom: 4.75rem;
+        right: 14.35rem;
+        border-top: 120px solid transparent;
+        border-right: 120px solid rgb(46, 115, 208);
+    }
 }
 
 .box6 {
+    position: relative;
     width: 100px;
     height: 100px;
     background-color: gray;
